@@ -4,7 +4,8 @@
   "description": "Interview Practice Question Basic Repo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "server": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/prasadgautam16/mern-interview-project/issues"
   },
-  "homepage": "https://github.com/prasadgautam16/mern-interview-project#readme"
+  "homepage": "https://github.com/prasadgautam16/mern-interview-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
 }
