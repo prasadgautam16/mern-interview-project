@@ -7,4 +7,6 @@ Interview Practice Question
 # npm init
 # npm i express express-validator mongoose
 # npm i -D nodemon concurrently
+# npx create-react-app --client
+# npm run dev
 
