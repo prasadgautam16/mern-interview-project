@@ -36,7 +36,6 @@ const Container = (props) => {
 
             console.log(res.data);
 
-
         } catch(err) {
             console.error(err.response.data);
         }
@@ -44,12 +43,12 @@ const Container = (props) => {
     }
     
     return (
-        <Form>
+        <Form onSubmit={e => onSubmit(e)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="text" name='name' placeholder="Enter Name" value={name} onChange={e => onChange(e)}/>
             </Form.Group>
-            <Button variant="primary" type="submit" onSubmit={e => onSubmit(e)}>
+            <Button variant="primary" type="submit">
                 Submit
             </Button>
         </Form>
